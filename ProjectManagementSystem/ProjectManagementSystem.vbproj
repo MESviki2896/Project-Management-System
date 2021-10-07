@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{909261E4-A5F7-4F05-9D6E-03CE5675B8E8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProjectManagementSystem.My.MyApplication</StartupObject>
+    <RootNamespace>ProjectManagementSystem</RootNamespace>
+    <AssemblyName>ProjectManagementSystem</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProjectManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProjectManagementSystem.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PMD_Logo-removebg-preview.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="endeccrypt">
+      <HintPath>..\..\CurrentVerification\KeyStationVerification\bin\Debug\endeccrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="LOGANDINI">
+      <HintPath>..\..\CurrentVerification\KeyStationVerification\bin\Debug\LOGANDINI.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SQL_Conn, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Data\G-HUB\SQL_Conn-master\SQL_Conn-master\SQL_Conn\bin\Debug\SQL_Conn.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\Account Group.Designer.vb">
+      <DependentUpon>Account Group.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Account Group.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\CreateAccount.Designer.vb">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CreateAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\Profile.Designer.vb">
+      <DependentUpon>Profile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\Profile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\ResetOtherAccount.Designer.vb">
+      <DependentUpon>ResetOtherAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ResetOtherAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\ResetPersonalAccount.Designer.vb">
+      <DependentUpon>ResetPersonalAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\ResetPersonalAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administration\UserPermissions.Designer.vb">
+      <DependentUpon>UserPermissions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\UserPermissions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="FucntionModules.vb" />
+    <Compile Include="FrmCreateUser.Designer.vb">
+      <DependentUpon>FrmCreateUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help\AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help\AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\CalendarView.Designer.vb">
+      <DependentUpon>CalendarView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\CalendarView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.6.AssemblyAttributes.vb" />
+    <Compile Include="PMDDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMDDataSet.vb">
+      <DependentUpon>PMDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMSMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PMSMain.Designer.vb">
+      <DependentUpon>PMSMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Process\AddStage.Designer.vb">
+      <DependentUpon>AddStage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Process\AddStage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\ProjectStageMapping.Designer.vb">
+      <DependentUpon>ProjectStageMapping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Process\ProjectStageMapping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process\SubProcessStageMapping.Designer.vb">
+      <DependentUpon>SubProcessStageMapping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Process\SubProcessStageMapping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\CreateProject.Designer.vb">
+      <DependentUpon>CreateProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\CreateProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\ImmediateProject.Designer.vb">
+      <DependentUpon>ImmediateProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\ImmediateProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\SubProcessCompletion.Designer.vb">
+      <DependentUpon>SubProcessCompletion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\SubProcessCompletion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\ProcessCompletioneEntry.Designer.vb">
+      <DependentUpon>ProcessCompletioneEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\ProcessCompletioneEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project\ValidateStage.Designer.vb">
+      <DependentUpon>ValidateStage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Project\ValidateStage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PubVals.vb" />
+    <Compile Include="QueryModule.vb" />
+    <Compile Include="ShareFolderMake.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Administration\Account Group.resx">
+      <DependentUpon>Account Group.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\CreateAccount.resx">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ResetOtherAccount.resx">
+      <DependentUpon>ResetOtherAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\ResetPersonalAccount.resx">
+      <DependentUpon>ResetPersonalAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administration\UserPermissions.resx">
+      <DependentUpon>UserPermissions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateUser.resx">
+      <DependentUpon>FrmCreateUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help\AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\CalendarView.resx">
+      <DependentUpon>CalendarView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ProjectManagementSystem.AboutBox1.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectManagementSystem.CreateProject.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectManagementSystem.FrmCreateUser.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectManagementSystem.FrmLogin.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectManagementSystem.PMSMain.resources" />
+    <EmbeddedResource Include="obj\Debug\ProjectManagementSystem.Resources.resources" />
+    <EmbeddedResource Include="PMSMain.resx">
+      <DependentUpon>PMSMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\AddStage.resx">
+      <DependentUpon>AddStage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\ProjectStageMapping.resx">
+      <DependentUpon>ProjectStageMapping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process\SubProcessStageMapping.resx">
+      <DependentUpon>SubProcessStageMapping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\CreateProject.resx">
+      <DependentUpon>CreateProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ImmediateProject.resx">
+      <DependentUpon>ImmediateProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\SubProcessCompletion.resx">
+      <DependentUpon>SubProcessCompletion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ProcessCompletioneEntry.resx">
+      <DependentUpon>ProcessCompletioneEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\ValidateStage.resx">
+      <DependentUpon>ValidateStage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\data\descs.rtf" />
+    <None Include="bin\Debug\data\Document.rtf" />
+    <None Include="bin\Debug\data\specs.rtf" />
+    <None Include="bin\Debug\ProjectManagementSystem.exe.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ProjectManagementSystem.vbproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\ProjectManagementSystem.vbproj.CopyComplete" />
+    <None Include="obj\Debug\ProjectManagementSystem.vbproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\ProjectManagementSystem.vbproj.GenerateResource.cache" />
+    <None Include="PMDDataSet.xsc">
+      <DependentUpon>PMDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PMDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMDDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMDDataSet.xss">
+      <DependentUpon>PMDDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\data\settings.txt" />
+    <Content Include="bin\Debug\endeccrypt.dll" />
+    <Content Include="bin\Debug\LOGANDINI.dll" />
+    <Content Include="bin\Debug\ProjectManagementSystem.exe" />
+    <Content Include="bin\Debug\ProjectManagementSystem.pdb" />
+    <Content Include="bin\Debug\ProjectManagementSystem.xml" />
+    <Content Include="bin\Debug\SQL_Conn.dll" />
+    <Content Include="bin\Debug\SQL_Conn.pdb" />
+    <Content Include="bin\Debug\SQL_Conn.xml" />
+    <Content Include="obj\Debug\ProjectManagementSystem.exe" />
+    <Content Include="obj\Debug\ProjectManagementSystem.pdb" />
+    <Content Include="obj\Debug\ProjectManagementSystem.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ProjectManagementSystem.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="PMD_Logo-removebg-preview.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
