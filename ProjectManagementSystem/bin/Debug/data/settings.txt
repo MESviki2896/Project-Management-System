@@ -1,0 +1,14 @@
+[DBLogin]
+#Server_IP=10.10.100.100
+Server_IP=192.168.1.23
+Database_Name=PMD
+DB_ID=sa
+USERID=LAVA
+#DB_Pass=///3/:/6///4/3/0
+DB_Pass=3=1<262=39/2///0
+
+[Parameter]
+ShareServer=\\192.168.1.23\UploadDocuments
+
+[logloc]
+LOGLOC=

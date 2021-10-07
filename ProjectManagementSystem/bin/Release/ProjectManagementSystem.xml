@@ -1,0 +1,181 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ProjectManagementSystem
+</name>
+</assembly>
+<members>
+<member name="T:ProjectManagementSystem.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ProjectManagementSystem.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ProjectManagementSystem.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.Getini(System.String,System.String)">
+<summary>
+This Function obtains the information from the ini file.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.OpenDB(System.String,System.Data.SqlClient.SqlCommand@)">
+<summary>
+This Function handles all the heavy lifting in terms of the database connection.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.isopen">
+<summary>
+This Function Checks the Database Connection status.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.delay(System.Int32)">
+<summary>
+This Function Provides delay if the connection status is open.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.CreateParameter(System.Int32)">
+<summary>
+This Function Provides vanity to create database parameters.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.AddParamaeter(System.Int32,System.Object,System.Object,System.Data.SqlDbType,System.Int32,System.Data.ParameterDirection)">
+<summary>
+This Function to add/Provide data to different database parameters.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.LOGGING(System.String,System.Int32)">
+<summary>
+This Function Provides LogWriting geature to the application.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.cryptic(System.String)">
+<summary>
+This Function is designed to generate MD5 Hash of the given input data.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.FillComboBox(System.Windows.Forms.ComboBox,System.Data.DataTable,System.Boolean)">
+<summary>
+This Function is simple yet powerful method to fill a combobox using the datatable.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.filetobinarywrite(System.String)">
+<summary>
+File Streams takes path as input and provides a bytestream or BLob as output.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.binarytofileread(System.Byte[],System.String)">
+<summary>
+This Function obtains the byte stream data and this data is converted to file, to be read by the richtextbox.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.fillgridcombobox(System.Windows.Forms.DataGridViewComboBoxColumn,System.Data.DataTable,System.Boolean)">
+<summary>
+This Function a small help in adding the required data to a Datagridview Combobox Column.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.filtadd(System.String,System.String,System.String)">
+<summary>
+This Function Does Filtering of the Datagridview.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.filteremove(System.String,System.String,System.String)">
+<summary>
+This Function Does Filtering Removal of the Datagridview.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.Filehandling(System.String,System.String)">
+<summary>
+This Function Checks the available drive to move the application easily and copies the file to respective drive.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.UploadFile(System.String,System.String)">
+<summary>
+This Function Helps to Upload the file to the sever.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.Getdateenum(System.DateTime,System.DateTime)">
+<summary>
+This Function Helps to get the Datearray for the date in between the dates mentioned.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.FucntionModules.HighlightWeekends(System.DateTime,System.DateTime)">
+<summary>
+This Function sends the Datearray, which will be consumed in the MonthCalendar form and displayed as bold .
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSet.AccountMasterDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSet.AccountMasterRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSet.AccountMasterRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSetTableAdapters.AccountMasterTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(ProjectManagementSystem.PMDDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(ProjectManagementSystem.PMDDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(ProjectManagementSystem.PMDDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager.UpdateAll(ProjectManagementSystem.PMDDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:ProjectManagementSystem.PMDDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
